@@ -8,6 +8,7 @@ const requests = [];
 const server = http.createServer((req, res) => {
   console.log('Hit and Run');
   requests.push(req);
+  requests.push(req);
   notOptimisedCode();
   res.end('Hello, World!');
 });
